@@ -4,6 +4,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
@@ -30,9 +31,9 @@ body{
 
 .logo{
     color:white;
-    font-size:28px;
+    font-size:30px;
     font-weight:700;
-    letter-spacing:2px;
+    letter-spacing:3px;
 }
 
 .nav a{
@@ -100,6 +101,74 @@ body{
     background:white;
     color:#ff6f61;
     transform:scale(1.05);
+}
+
+/* GALLERY */
+
+.gallery{
+    padding:100px 80px;
+    background:white;
+    text-align:center;
+}
+
+.gallery h2{
+    font-size:50px;
+    margin-bottom:50px;
+}
+
+.gallery-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.gallery-card{
+    width:350px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.gallery-card:hover{
+    transform:translateY(-10px);
+}
+
+.gallery-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.gallery-info{
+    padding:25px;
+}
+
+.gallery-info h3{
+    margin-bottom:15px;
+    font-size:28px;
+    color:#ff6f61;
+}
+
+.gallery-info p{
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+.gallery-info a{
+    display:inline-block;
+    padding:12px 30px;
+    background:#ff6f61;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:0.3s;
+}
+
+.gallery-info a:hover{
+    background:#222;
 }
 
 /* ADVANTAGES */
@@ -262,71 +331,4 @@ form button:hover{
     color:white;
     text-align:center;
     padding:25px;
-}
-/* ДОДАЙ В КІНЕЦЬ style.css */
-
-.gallery{
-    padding:100px 80px;
-    background:white;
-    text-align:center;
-}
-
-.gallery h2{
-    font-size:50px;
-    margin-bottom:50px;
-}
-
-.gallery-container{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-}
-
-.gallery-card{
-    width:350px;
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
-    transition:0.4s;
-}
-
-.gallery-card:hover{
-    transform:translateY(-10px);
-}
-
-.gallery-card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-}
-
-.gallery-info{
-    padding:25px;
-}
-
-.gallery-info h3{
-    margin-bottom:15px;
-    font-size:28px;
-    color:#ff6f61;
-}
-
-.gallery-info p{
-    margin-bottom:25px;
-    line-height:1.6;
-}
-
-.gallery-info a{
-    display:inline-block;
-    padding:12px 30px;
-    background:#ff6f61;
-    color:white;
-    text-decoration:none;
-    border-radius:50px;
-    transition:0.3s;
-}
-
-.gallery-info a:hover{
-    background:#222;
 }
